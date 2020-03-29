@@ -17,7 +17,7 @@ Mr. Jep does nothing more than tweets about Jeps. I don't know if I'll add more 
 ## Requirements
 
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [JDK]() - jdk >= 8
+* [JDK]() - jdk >= 11
 
 ## Authors
 
