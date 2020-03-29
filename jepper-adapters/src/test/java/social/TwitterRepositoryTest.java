@@ -31,7 +31,7 @@ class TwitterRepositoryTest {
   @BeforeEach
   void setUp() {
     initMocks(this);
-    twitterRepository = new TwitterRepository();
+    twitterRepository = new TwitterRepository(twitter);
   }
 
   @Test
