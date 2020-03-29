@@ -3,13 +3,7 @@ package io.mosfet.jepper.configuration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * Created with love.
- * User: mosfet
- * Date: 15/03/20
- * github: kmos
- * twitter: nmosf
- */
+/** Created with love. User: mosfet Date: 15/03/20 github: kmos twitter: nmosf */
 @Component
 @ConfigurationProperties("twitter")
 public class TwitterAccount {

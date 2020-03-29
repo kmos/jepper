@@ -22,8 +22,7 @@ public class OpenJDKRepository implements JDKRepository {
   @Override
   public List<RawJep> getJdkEnhancementProposals(int jdk) throws IOException {
     String url = OPEN_JDK_LINK + jdk;
-    return Jsoup.connect(url).get().select(Html.BLOCKQUOTE).first().select(Html.A)
-        .stream()
+    return Jsoup.connect(url).get().select(Html.BLOCKQUOTE).first().select(Html.A).stream()
         .map(Unchecked.function(this::fromElement))
         .collect(Collectors.toList());
   }

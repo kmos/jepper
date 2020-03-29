@@ -8,7 +8,6 @@ import java.security.SecureRandom;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import org.apache.commons.validator.routines.UrlValidator;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 /** Created with love. User: mosfet Date: 02/03/20 github: kmos twitter: nmosf */
@@ -25,7 +24,7 @@ public class BotService {
     this.socialService = socialService;
   }
 
-  //@Scheduled(cron = "5 * * * * *")
+  // @Scheduled(cron = "5 * * * * *")
   void findRandomJepAndPublishToTwitter()
       throws IOException, SocialException, NoSuchAlgorithmException {
     int jdk = ThreadLocalRandom.current().nextInt(FROM, TO);
